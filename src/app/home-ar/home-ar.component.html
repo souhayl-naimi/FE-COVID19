@@ -1,0 +1,122 @@
+<div class="container" *ngIf="lastStatus">
+  <p align="center">{{lastStatus.lastUpdated}}: آخر تحديث للمعطيات : </p>
+</div>
+<div class="container mt-4" *ngIf="lastStatus">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card bg-light">
+        <div class="card-body">
+          <div class="card-title">
+            <h4>عدد ساكنة المغرب</h4>
+            <h6>{{pop.timestamp}}</h6>
+            <h3><span class="badge badge-pill badge-light"><img src="assets/images/trending.png"/> {{ pop.population.toLocaleString()}}</span></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card danger">
+        <div class="card-body">
+          <div class="card-title">
+            <h4 >آخر 24 ساعة</h4>
+            <h6>الحالات الجديدة المؤكدة</h6>
+            <h3><span class="badge badge-pill danger"><img src="assets/images/trending.png"/> {{ lastDay}}</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p></p>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card border-info mb-3">
+        <div class="card-body">
+          <div class="card-title"><h5>المستبعدون</h5></div>
+          <h3><span class="badge badge-pill badge-info"><img src="assets/images/trending-white.png"/> {{ lastStatus.excluded}}</span></h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card border-warning mb-3">
+        <div class="card-body">
+          <div class="card-title"><h5>المصابون</h5></div>
+          <h3><span class="badge badge-pill badge-warning"><img src="assets/images/trending.png"/> {{ lastStatus.infected}}</span></h3></div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card border-danger mb-3">
+        <div class="card-body">
+          <div class="card-title"><h5>الوفيات</h5>
+          </div>
+          <h3><span class="badge badge-pill badge-danger"><img src="assets/images/trending-white.png"/> {{ lastStatus.deaths}}</span></h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card border-success mb-3">
+        <div class="card-body">
+          <div class="card-title">
+            <h5>المعالجون</h5>
+          </div>
+          <h3><span class="badge badge-pill badge-success"><img src="assets/images/trending-white.png"/> {{ lastStatus.recovered}}</span></h3></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="chart-container">
+        <canvas id="ctx"></canvas>
+      </div>
+    </div>
+
+
+
+
+
+    <!--
+    <div class="container">
+      <p align="center">{{lastStatus.lastUpdated}} : آخر تحديث للمعطيات</p>
+    </div>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card border-info mb-3">
+            <div class="card-body">
+              <div class="card-title"><h4>المستبعدون</h4></div>
+              <h3><span class="badge badge-pill badge-info">{{lastStatus.excluded}}</span></h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card border-warning mb-3">
+            <div class="card-body">
+              <div class="card-title"><h4>المصابون</h4></div>
+              <h3><span class="badge badge-pill badge-warning">{{lastStatus.infected}}</span></h3></div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card border-danger mb-3">
+            <div class="card-body">
+              <div class="card-title"><h4>الوفيات</h4>
+              </div>
+              <h3><span class="badge badge-pill badge-danger">{{lastStatus.deaths}}</span></h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card border-success mb-3">
+            <div class="card-body">
+              <div class="card-title">
+                <h4>المعالجون</h4>
+              </div>
+              <h3><span class="badge badge-pill badge-success">{{lastStatus.recovered}}</span></h3></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    -->

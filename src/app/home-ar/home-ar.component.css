@@ -1,0 +1,32 @@
+div{
+  font-family: 'Tajawal', sans-serif;
+}
+.card-body{
+  font-weight: bold;
+}
+p{
+  color: darkgrey;
+}
+.danger{
+  background-color: #fff2f2;
+}
+h5{
+  color: darkgrey;
+  text-align: right;
+  font-weight: bold
+}
+h4{
+  font-weight: bold;
+  text-align: right;
+}
+h6{
+  color: darkgrey;
+  text-align: right;
+}
+h3{
+  text-align: left;
+}
+.card{
+  border-radius: 25px;
+}
+

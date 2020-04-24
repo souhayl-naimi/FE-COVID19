@@ -1,0 +1,108 @@
+<div class="container mt-3">
+  <div class="card align-items-center">
+    <div class="card-body ls">
+      dernière mise à jour : {{lastStatus.lastUpdated}}
+    </div>
+  </div>
+</div>
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card bg-light">
+        <div class="card-body">
+          <div class="card-title">
+            <h4>Horloge De La Population</h4>
+            <h6>{{pop.timestamp}}</h6>
+            <h3><span class="badge badge-pill badge-light"><img
+              src="assets/images/trending.png"/> {{ pop.population.toLocaleString()}}</span></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-light mb-3" style="height: 40mm">
+        <div class="card-body">
+          <div class="card-title"><h4>Casablanca</h4></div>
+          <h3><span class="badge badge-pill badge-danger"><img
+            src="assets/images/trending-white.png"/> {{ lastCasa}}</span></h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-light mb-3" style="height: 40mm">
+        <div class="card-body">
+          <div class="card-title"><h4>Maroc</h4></div>
+          <h3><span class="badge badge-pill badge-danger"><img
+            src="assets/images/trending-white.png"/> {{ lastDay}}</span></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p></p>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card border-info mb-3">
+        <div class="card-body">
+          <div class="card-title"><h5>Les Exclus</h5></div>
+          <h3><span class="badge badge-pill badge-info"><img
+            src="assets/images/trending-white.png"/> {{ lastStatus.excluded}}</span></h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card border-warning mb-3">
+        <div class="card-body">
+          <div class="card-title"><h5>Les Infectés</h5></div>
+          <h3><span class="badge badge-pill badge-warning"><img
+            src="assets/images/trending.png"/> {{ lastStatus.infected}}</span></h3></div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card border-danger mb-3">
+        <div class="card-body">
+          <div class="card-title"><h5>Les Mortalités</h5>
+          </div>
+          <h3><span class="badge badge-pill badge-danger"><img
+            src="assets/images/trending-white.png"/> {{ lastStatus.deaths}}</span></h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card border-success mb-3">
+        <div class="card-body">
+          <div class="card-title">
+            <h5>Les Recouvrés</h5>
+          </div>
+          <h3><span class="badge badge-pill badge-success"><img
+            src="assets/images/trending-white.png"/> {{ lastStatus.recovered}}</span></h3></div>
+      </div>
+    </div>
+  </div>
+  <!--<div class="container mt-3">
+    <div class="row">
+      <div class="col-sm-5"></div>
+      <div class="col-md-1">
+        <button class="button" (click)="hide()">
+          <span>Pie Chart</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row" id="cc">
+    <div class="container mt-3">
+      <div class="card chart">
+        <div id="chart-container">
+          <canvas id="ctx"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<p></p>-->
+  <!--
+
+  align-items-center - vertically aligns the content.
+
+  justify-content-center - horizontally aligns the content.
+
+  -->
