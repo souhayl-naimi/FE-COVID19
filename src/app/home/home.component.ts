@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
         this.lastStatus = this.infected._embedded.statuses[this.infected._embedded.statuses.length - 1];
         this.previousStatus = this.infected._embedded.statuses[this.infected._embedded.statuses.length - 2];
         this.pPreviousStatus = this.infected._embedded.statuses[this.infected._embedded.statuses.length - 3];
-        if(this.lastStatus.lastUpdated.includes("16H00")){
+        if(this.lastStatus.lastUpdated.includes("16H00")){ //altered time
           this.lastDay=this.lastStatus.infected-this.pPreviousStatus.infected;
           this.lastCasa=parseInt(this.lastStatus.casablanca)-parseInt(this.pPreviousStatus.casablanca);
         }else if(this.lastStatus.lastUpdated.includes("10H00")){
